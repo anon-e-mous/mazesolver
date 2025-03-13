@@ -2,9 +2,13 @@ from window import *
 from point import Point
 from line import Line
 from cell import Cell
+from maze import Maze
 
 def main():
     win = Window(800, 600)
+
+    maze = Maze(150, 50, 10, 10, 50, 50, win, None)
+
     #win.clear()
 
     #p1 = Point(50, 100)
@@ -26,15 +30,15 @@ def main():
     #win.draw_line(line3, "green")
     #win.draw_line(line4, "blue")
 
-    c1 = Cell(100, 150, 150, 200, win, False, False, True, True)
-    c1.draw()
-    c1a = Cell(150, 200, 150, 200, win, False, False, False, True)
-    c1a.draw()
+    #c1 = Cell(100, 150, 150, 200, win, False, False, True, True)
+    #c1.draw()
+    #c1a = Cell(150, 200, 150, 200, win, False, False, False, True)
+    #c1a.draw()
     #c1a.draw_move(c1, undo=False)
-    c1b = Cell(150, 200, 100, 150, win, True, True, True, False)
-    c1b.draw()
-    c1a.draw_move(c1b, undo=False)
-    c1b.draw_move(c1a, undo=False)
+    #c1b = Cell(150, 200, 100, 150, win, True, True, True, False)
+    #c1b.draw()
+    #c1a.draw_move(c1b, undo=False)
+    #c1b.draw_move(c1a, undo=False)
     #c2 = Cell(200, 300, 300, 400, win, True, False, True, True)
     #c2.draw()
     #c3 = Cell(450, 500, 475, 525, win, True, True, False, True)
